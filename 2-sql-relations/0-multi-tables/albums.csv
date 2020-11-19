@@ -1,4 +1,4 @@
-id,date,artist_id,title,rank,length,track_length
-1,2019-01-19,2,17,256500,1,The Very Best Of Prince
-2,2017-06-03,2,40,233901,1,4Ever
-3,2016-07-16,1,11,202174.0,2,Stranger To Stranger
+id,date,artist_id,tracks,track_length,title
+1,2019-01-19,2,17,256500.0,The Very Best Of Prince
+2,2017-06-03,2,40,233901.0,4Ever
+3,2016-07-16,1,11,202174.0,Stranger To Stranger

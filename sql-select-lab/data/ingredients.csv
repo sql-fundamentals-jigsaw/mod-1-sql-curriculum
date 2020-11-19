@@ -1,0 +1,21 @@
+id,name,cost_per_ounce,calories_per_ounce,expiration
+1,baby spinach,0.19,7,2020-02-05
+2,kale,0.5,10,2020-02-10
+3,tomatoes,1.25,5,2020-01-30
+4,broccoli,1.15,45,2020-02-10
+5,chicken,3.5,90,2020-02-07
+6,arugula,0.5,20,2020-02-10
+7,apples,1.2,30,2020-02-08
+8,pears,1.1,30,2020-02-10
+9,corn,1.25,40,2020-02-08
+10,brussels sprouts,1.4,40,2020-02-01
+11,almonds,0.9,50,2020-02-02
+12,mushrooms,1.4,60,2020-02-02
+13,tofu,1.35,40,2020-02-03
+14,avocado,2.05,70,2020-02-08
+15,romaine,0.2,5,2020-02-07
+16,cauliflower,1.6,45,2020-01-30
+17,parmesan,2.1,75,2020-02-01
+18,feta,2.2,80,2020-02-02
+19,caesar dressing,1.5,90,2020-02-03
+20,balsamic vinaigrette,1.45,40,2020-02-07
