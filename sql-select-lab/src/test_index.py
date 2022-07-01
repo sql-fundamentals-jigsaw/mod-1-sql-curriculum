@@ -11,8 +11,6 @@ def test_all_employees_has_each_entry_an_employee():
 def test_all_ingredients_selects_ingredients():
     assert len(all_ingredients()) == 20
 
-    
-
 def test_all_ingredient_names_returns_twenty_entries():
     assert len(all_ingredient_names()) == 20
 

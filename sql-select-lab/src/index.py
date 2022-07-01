@@ -5,8 +5,8 @@ conn = sqlite3.connect('../grocery.db')
 cursor = conn.cursor()
 
 def load_data_to_sql():
-    employees_url = "https://raw.githubusercontent.com/jigsawlabs-student/mod-1-sql-curriculum/master/1-sql-fundamentals/8-sql-select-lab/data/employees.csv"
-    ingredients_url = "https://raw.githubusercontent.com/jigsawlabs-student/mod-1-sql-curriculum/master/1-sql-fundamentals/8-sql-select-lab/data/ingredients.csv"
+    employees_url = "https://raw.githubusercontent.com/data-eng-10-21/mod-1-sql-curriculum/master/1-sql-fundamentals/8-sql-select-lab/data/employees.csv"
+    ingredients_url = "https://raw.githubusercontent.com/data-eng-10-21/mod-1-sql-curriculum/master/1-sql-fundamentals/8-sql-select-lab/data/ingredients.csv"
     ingredients_df = pd.read_csv(ingredients_url)
     employees_df = pd.read_csv(employees_url)
     ingredients_df.to_sql('ingredients', conn,
@@ -16,8 +16,7 @@ def load_data_to_sql():
 
 
 def all_employees():
-   cursor.execute('SELECT * FROM employees;')
-   return cursor.fetchall()
+    pass
 
 def all_ingredients():
     pass

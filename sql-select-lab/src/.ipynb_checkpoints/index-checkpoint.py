@@ -16,29 +16,37 @@ def load_data_to_sql():
 
 
 def all_employees():
-   cursor.execute('SELECT * FROM employees;')
+    cursor.execute('SELECT * FROM employees;')
+    return cursor.fetchall()
 
 def all_ingredients():
-    pass
+    cursor.execute('SELECT * FROM ingredients;')
+    return cursor.fetchall()
 
 def all_ingredient_names():
-    pass
+    cursor.execute('SELECT name FROM ingredients;')
+    return cursor.fetchall()
 
 def all_employee_start_dates():
-    pass
+    cursor.execute('SELECT start_date FROM employees;')
+    return cursor.fetchall()
 
 def cheaper_ingredients():
-    pass
+    cursor.execute("SELECT * FROM ingredients WHERE cost_per_ounce < 1.0")
+    return cursor.fetchall()
 
 def naomi_start_date():
-    pass
+    cursor.execute("SELECT start_date FROM employees WHERE name = 'Naomi'")
+    return cursor.fetchall()
 
 def ingredients_expiring_after_feb():
-    pass
+    cursor.execute("SELECT * FROM ingredients WHERE expiration >= '2020-02-01'")
+    return cursor.fetchall()
 
 def ingredients_middle_price():
-    pass
+    cursor.execute("SELECT * FROM ingredients WHERE cost_per_ounce > 1 AND cost_per_ounce < 1.50")
+    return cursor.fetchall()
 
 def employees_in_nearby_zip_code():
-    pass
-    # in zip codes 10001 or 10002
+    cursor.execute("SELECT * FROM employees WHERE zip_code = 10001 or zip_code = 10002")
+    return cursor.fetchall()
